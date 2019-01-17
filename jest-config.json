@@ -9,7 +9,8 @@
   "coveragePathIgnorePatterns": [
     "/types/",
     "/src/index.tsx",
-    "/src/app.tsx"
+    "/src/app.tsx",
+    "setupEnzyme.ts"
   ],
   "coverageReporters": [
     "json-summary",
@@ -51,7 +52,8 @@
   ],
   "testPathIgnorePatterns": [
     "/node_modules/",
-    "/dist/"
+    "/dist/",
+    "setupEnzyme"
   ],
   "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
   "testURL": "http://localhost",
