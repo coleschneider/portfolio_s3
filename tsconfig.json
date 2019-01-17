@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "outDir": "./dist",
+      "jsx": "react",
+      "module": "commonjs",
+      "noImplicitAny": false,
+      "strict": true,
+      "alwaysStrict": true,
+      "noImplicitThis": true,
+      "preserveConstEnums": true,
+      "target": "es2015",
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "pretty": true,
+      "paths": {
+        "*": ["node_modules/@types/*", "*"]
+      }
+    },
+    "include": [
+      "src/**/*",
+    ],
+    "exclude": [
+      "node_modules",
+      "node_modules/@types/react/globals.d.ts",
+      "!**/*.spec.tsx"
+    ]
+  }
+  

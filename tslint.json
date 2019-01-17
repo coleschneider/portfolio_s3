@@ -1,0 +1,15 @@
+{
+    "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+    "rules": {
+        "no-implicit-dependencies": false,
+        "curly": false,
+        "object-literal-sort-keys": false,
+        "interface-name": false,
+        "no-console": true,
+        "no-shadowed-variable": false,
+        "member-access": [true, "no-public"],
+        "no-namespace": false,
+        "no-internal-module": false,
+        "ordered-imports": false
+    }
+}

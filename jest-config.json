@@ -1,0 +1,62 @@
+{
+  "cacheDirectory": "<rootDir>/jestCache",
+  "collectCoverageFrom": [
+    "**/*.{ts,tsx}",
+    "!**/node_modules/**",
+    "!**/*.d.ts",
+    "!**/{test,tests}/**"
+  ],
+  "coveragePathIgnorePatterns": [
+    "/types/",
+    "/src/index.tsx",
+    "/src/app.tsx"
+  ],
+  "coverageReporters": [
+    "json-summary",
+    "text",
+    "lcov"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": -53,
+      "functions": -22,
+      "lines": -67,
+      "statements": -75
+    }
+  },
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json"
+  ],
+  "moduleNameMapper": {
+    "\\.(css)$": "identity-obj-proxy",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileMock.js",
+    "^aphrodite$": "<rootDir>/node_modules/aphrodite",
+    "^react$": "<rootDir>/node_modules/react",
+    "^react-dom$": "<rootDir>/node_modules/react-dom"
+  },
+  "modulePathIgnorePatterns": [
+    "<rootDir>/dist/"
+  ],
+  "setupFiles": [
+    "raf/polyfill",
+    "./test/jestSetup.js"
+  ],
+  "setupTestFrameworkScriptFile": "<rootDir>/test/testFrameworkSetup.js",
+  "snapshotSerializers": [
+    "<rootDir>/node_modules/enzyme-to-json/serializer"
+  ],
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "/dist/"
+  ],
+  "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+  "testURL": "http://localhost",
+  "transform": {
+    ".(ts|tsx|js|jsx)": "<rootDir>/preprocessor.js"
+  },
+  "verbose": false
+}
